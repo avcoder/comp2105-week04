@@ -371,50 +371,38 @@
       </section>
 
 
+
       <section>
+        <!--.wrap = container (width: 90%) -->
         <div class="wrap">
-          <div class="content-left">
-            <h3>
-              Online Exercise to be submitted
-            </h3>
-            <p>Watch Scott McCrindle's 21 minute video showing how to set up CSS transitions.</p>
-            <p>
-              <a href="https://codepen.io/avcoder/pen/wyrwWR">https://codepen.io/avcoder/pen/wyrwWR</a>
-              <br/>OR
-              <br/>use Blackboard's files under Online Exercise 4
-            </p>
+          <div class="grid vertical-align">
 
-          </div>
-          <!-- end .content-left -->
-          <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-            <div class="embed">
-              <div data-youtube data-youtube-id="IGgNnJvyLyg" data-autoplay data-no-controls></div>
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="wyrZge" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="DIY Rolling a Ball with Transitions" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/wyrZge/">DIY Rolling a Ball with Transitions</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
             </div>
-            <!-- end .embed -->
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Make the Ball Move
+                <br/>
+                <img src="./static/images/cat.png" alt="cat">
+              </h3>
+
+
+
+            </div>
+            <!-- .end .column -->
           </div>
-          <!-- end .content-left -->
+          <!-- .end .grid -->
         </div>
         <!-- .end .wrap -->
       </section>
 
-
-
-
-      <section class="bg-apple aligncenter">
-        <div class="wrap zoomIn">
-          <h1>
-            Submit what we just did under
-            <br/>
-            <strong>"Online Exercise 4"</strong>
-          </h1>
-          <p>
-            <a href="https://gc.blackboard.com">Login to Blackboard</a>
-          </p>
-
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -463,15 +451,17 @@
         <!-- .end .wrap -->
       </section>
 
+
+
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
 
             <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="wyrZge" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+              <p data-height="500" data-theme-id="0" data-slug-hash="MQOKmB" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
                 data-pen-title="DIY Rolling a Ball with Transitions" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/wyrZge/">DIY Rolling a Ball with Transitions</a> by A.V. (
+                <a href="https://codepen.io/avcoder/pen/MQOKmB/">DIY Rolling a Ball with Transitions</a> by A.V. (
                 <a href="https://codepen.io/avcoder">@avcoder</a>) on
                 <a href="https://codepen.io">CodePen</a>.</p>
               <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -479,12 +469,9 @@
             <!-- .end .column -->
             <div class="column">
               <h3>
-                Make the Ball Move
-                <br/>
-                <img src="./static/images/cat.png" alt="cat">
+                transition: all 1s
               </h3>
-
-
+              <p>Sometimes you may unintentionally affect future changes</p>
 
             </div>
             <!-- .end .column -->
@@ -496,7 +483,84 @@
 
 
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <blockquote class="text-quote">
+            <p>transition-property: all is not very performant -- Don't do it!
+            </p>
+            <p>It doesn't let the browser optimize for things that might change and that might result in the browser devoting
+              too many resources
+            </p>
+            <p>
+              <cite>
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/899039208693669888/ibha3cYB_bigger.jpg" alt="Avatar">Rachel Nabors.
+                <br/>
+                <a href="https://www.lynda.com/MyPlaylist/Watch/15095804/621358?autoplay=true">Motion Design with CSS</a>
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition-property: color, transform;</h2>
+          <h2>transition-duration: 2s, 300ms;</h2>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+      <section>
+        <div class="wrap">
+          <div class="content-left">
+            <h3>
+              Online Exercise to be submitted
+            </h3>
+            <p>Watch Scott McCrindle's 21 minute video showing how to set up CSS transitions.</p>
+            <p>
+              <a href="https://codepen.io/avcoder/pen/wyrwWR">https://codepen.io/avcoder/pen/wyrwWR</a>
+              <br/>OR
+              <br/>use Blackboard's files under Online Exercise 4
+            </p>
+
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+              <div data-youtube data-youtube-id="IGgNnJvyLyg" data-autoplay data-no-controls></div>
+            </div>
+            <!-- end .embed -->
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+      <section class="bg-apple aligncenter">
+        <div class="wrap zoomIn">
+          <h1>
+            Submit what we just did under
+            <br/>
+            <strong>"Online Exercise 4"</strong>
+          </h1>
+          <p>
+            <a href="https://gc.blackboard.com">Login to Blackboard</a>
+          </p>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
 
 
