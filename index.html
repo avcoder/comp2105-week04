@@ -134,22 +134,22 @@
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                <h2>Simple transition</h2>
-                <p>Configure a simple CSS transition for an HTML element.</p>
-              </li>
-              <li>
                 <h2>Target what property?</h2>
                 <p>Define precisely what visual properties will be transitioned.</p>
               </li>
               <li>
-                <h2>Timings</h2>
-                <p>Control animation timing for transitioned properties.
-                </p>
+                <h2>Simple transition</h2>
+                <p>Configure a simple CSS transition for an HTML element.</p>
               </li>
               <li>
                 <h2>Multiple transitions
                 </h2>
                 <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
+              </li>
+              <li>
+                <h2>Timings</h2>
+                <p>Control animation timing for transitioned properties.
+                </p>
               </li>
             </ul>
           </div>
@@ -191,16 +191,93 @@
         <div class="wrap aligncenter">
           <h2>(When to move) + (What to move) + (How to move)</h2>
           <h2>Trigger + Animatable Prop. + Transition</h2>
-          <br/>
-          <br/>
-          <p>What questions might you ask if you wanted to change colour?</p>
+
         </div>
         <!-- .end .wrap -->
       </section>
 
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>To Do Today:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li style="background: #aafaa4">
+                <h2>Target what property?</h2>
+                <p>Define precisely what visual properties will be transitioned.</p>
+              </li>
+              <li>
+                <h2>Simple transition</h2>
+                <p>Configure a simple CSS transition for an HTML element.</p>
+              </li>
+              <li>
+                <h2>Multiple transitions
+                </h2>
+                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
+              </li>
+              <li>
+                <h2>Timings</h2>
+                <p>Control animation timing for transitioned properties.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition-property</h2>
+          <p>the property you want to change</p>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">see animatable properties</a>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition-duration</h2>
+          <p>in seconds or milliseconds: 3s or 3000ms</p>
+          <p>Though milliseconds are actually a lot more robust to use in production code</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition-timing-function</h2>
+          <p>Optional property that "cushions" the transition</p>
+          <p>Default is set to ease</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition-delay</h2>
+          <p>Optional property that is the number of milli/seconds to delay the change before firing it</p>
+          <p>Default is set to 0</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
+
           <h2>transition-property: color;</h2>
           <h2>transition-duration: 2s;</h2>
           <h2>transition-timing-function: ease-in;</h2>
@@ -208,6 +285,52 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+
+          <h2>transition: color 2s ease-in 0.5s;</h2>
+          <p>Does it have to be in this order?</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>To Do Today:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>Target what property?</h2>
+                <p>Define precisely what visual properties will be transitioned.</p>
+              </li>
+              <li style="background: #aafaa4">
+                <h2>Simple transition</h2>
+                <p>Configure a simple CSS transition for an HTML element.</p>
+              </li>
+
+              <li>
+                <h2>Multiple transitions
+                </h2>
+                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
+              </li>
+              <li>
+                <h2>Timings</h2>
+                <p>Control animation timing for transitioned properties.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
 
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -248,56 +371,18 @@
       </section>
 
 
-
-
-
-
-
-
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="wyrZge" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="DIY Rolling a Ball with Transitions" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/wyrZge/">DIY Rolling a Ball with Transitions</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h3>
-                Demo
-                <br/>
-                <img src="./static/images/cat.png" alt="cat">
-              </h3>
-
-
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-
-
       <section>
         <div class="wrap">
           <div class="content-left">
             <h3>
-              <a href="https://webslides.tv/demos/media#slide=2">Exercise</a>
+              Online Exercise to be submitted
             </h3>
             <p>Watch Scott McCrindle's 21 minute video showing how to set up CSS transitions.</p>
-
+            <p>
+              <a href="https://codepen.io/avcoder/pen/wyrwWR">https://codepen.io/avcoder/pen/wyrwWR</a>
+              <br/>OR
+              <br/>use Blackboard's files under Online Exercise 4
+            </p>
 
           </div>
           <!-- end .content-left -->
@@ -319,15 +404,100 @@
       <section class="bg-apple aligncenter">
         <div class="wrap zoomIn">
           <h1>
-            Do Quiz
+            Submit what we just did under
+            <br/>
+            <strong>"Online Exercise 4"</strong>
           </h1>
           <p>
             <a href="https://gc.blackboard.com">Login to Blackboard</a>
           </p>
-          <p>You have unlimited multiple attempts for all quizzes!</p>
+
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>To Do Today:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>Target what property?</h2>
+                <p>Define precisely what visual properties will be transitioned.</p>
+              </li>
+              <li>
+                <h2>Simple transition</h2>
+                <p>Configure a simple CSS transition for an HTML element.</p>
+              </li>
+              <li style="background: #aafaa4">
+                <h2>Multiple transitions
+                </h2>
+                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
+              </li>
+              <li>
+                <h2>Timings</h2>
+                <p>Control animation timing for transitioned properties.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>transition: all 1s</h2>
+          <p>When
+            <strong>any</strong> property changes, it's going to get transitioned
+          </p>
+          <p>Good or bad?</p>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="wyrZge" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="DIY Rolling a Ball with Transitions" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/wyrZge/">DIY Rolling a Ball with Transitions</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Make the Ball Move
+                <br/>
+                <img src="./static/images/cat.png" alt="cat">
+              </h3>
+
+
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+
 
 
       <section class="bg-secondary">
@@ -357,7 +527,6 @@
           </ul>
         </div>
       </section>
-
 
 
 
