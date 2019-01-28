@@ -63,6 +63,10 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#333333">
 
+  <style>
+  mark { background-color: hsl(61, 100%, 77%)}
+  </style>
+
 </head>
 
 <body>
@@ -103,7 +107,7 @@
 
       <section>
         <!-- Credit: image from unsplash.com -->
-        <span class="background" style="background-image:url('./static/images/splash.jpg'); filter: opacity(.3);"></span>
+        <span class="background" style="background-image:url('./static/images/animationmap2.jpg'); filter: opacity(.3);"></span>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h1>
@@ -124,6 +128,15 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <img src="./static/images/animationmap.jpg" alt="The world of web animation by Val head" style="width: 80%">
+          <p><a href="https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure">https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure</a></p>
+        </div>
+        <!-- .end .wrap -->
+      </section>      
+
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50 aligncenter">
@@ -134,22 +147,21 @@
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                <h2>Target what property?</h2>
-                <p>Define precisely what visual properties will be transitioned.</p>
+                <h2>transition syntax</h2>
+                <p>Define precisely what visual properties will be transitioned. Configure a simple CSS transition for an HTML element. Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
               </li>
               <li>
-                <h2>Simple transition</h2>
-                <p>Configure a simple CSS transition for an HTML element.</p>
-              </li>
-              <li>
-                <h2>Multiple transitions
-                </h2>
-                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
-              </li>
-              <li>
-                <h2>Timings</h2>
+                <h2>Timing: easing / cubic-bezier</h2>
                 <p>Control animation timing for transitioned properties.
                 </p>
+              </li>
+              <li>
+                <h2>Timing: steps</h2>
+                <p>Used for sprite animation</p>
+              </li>
+              <li>
+                <h2>Using animation to direct focus and attention</h2>
+                <p>Using animation to solve design problems</p>
               </li>
             </ul>
           </div>
@@ -157,6 +169,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
 
 
       <section>
@@ -180,16 +193,16 @@
       <section class="">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
-          <h2>(When to move) + (What to move) + (How to move)</h2>
+          <h2>(When to move) + (What to change) + (How to change)</h2>
 
         </div>
         <!-- .end .wrap -->
       </section>
 
-      <section class="bg-apple">
+      <section class="bg-primary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
-          <h2>(When to move) + (What to move) + (How to move)</h2>
+          <h2>(When to move) + (What to change) + (How to change)</h2>
           <h2>Trigger + Animatable Prop. + Transition</h2>
 
         </div>
@@ -197,38 +210,35 @@
       </section>
 
       <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2>
-            <strong>To Do Today:</strong>
-          </h2>
-          <br />
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li style="background: #aafaa4">
-                <h2>Target what property?</h2>
-                <p>Define precisely what visual properties will be transitioned.</p>
-              </li>
-              <li>
-                <h2>Simple transition</h2>
-                <p>Configure a simple CSS transition for an HTML element.</p>
-              </li>
-              <li>
-                <h2>Multiple transitions
-                </h2>
-                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
-              </li>
-              <li>
-                <h2>Timings</h2>
-                <p>Control animation timing for transitioned properties.
-                </p>
-              </li>
-            </ul>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h2>All equivalent</h2>
+            <div class="grid vertical-align">
+              <div class="column">
+                  <pre><h5>
+transition: 2s;                    
+</h5></pre>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre><h5>
+transition: all 2s ease;                  
+</h5></pre>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                  <pre><h5>
+transition-property: all;
+transition-duration: 2s;
+transition-timing-function: ease;
+</h5></pre>
+              </div>
+            </div>
+            <!-- .end .grid -->
           </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
+
 
       <section class="">
         <!--.wrap = container (width: 90%) -->
@@ -988,6 +998,46 @@
         </div>
       </section>
 
+
+      <section class="bg-primary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock specs">
+              <li>
+                <p class="text-intro">Using animation to <b>orient and give context</b></p>
+              </li>
+              <li>
+                <p class="text-intro"><mark>Using animation to <b>direct focus and attention</b></mark></p>
+              </li>
+              <li>
+                <p class="text-intro">Using animation to <b>show cause and effect</b></p>
+              </li>
+              <li>
+                <p class="text-intro">Using animation for <b>feedback</b></p>
+              </li>
+              <li>
+                  <p class="text-intro">Using animation to <b>demonstrate</b></p>
+              </li>
+              <li>
+                  <p class="text-intro">Using animation to <b>express your brand</b></p>
+                </li>
+            </ul>
+            <p>
+              <cite>
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/669650293747900416/GApkPcFY_bigger.jpg" alt="Avatar">Val Head.
+                <br/>
+                <a href="https://rosenfeldmedia.com/books/designing-interface-animation/">
+                  Head, V. (2016). Using animation to solve design problems In, <i>Designing interface animation: meaningful motion for user experience.</i> Brooklyn, NY: Rosenfeld.</a>
+              </cite>
+            </p>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
 
       <section>
