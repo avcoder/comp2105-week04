@@ -242,12 +242,24 @@ transition-timing-function: ease;
 
       <section class="">
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <h2>transition-property</h2>
-          <p>the property you want to change</p>
-          <p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">see animatable properties</a>
-          </p>
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+                <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="css,result" data-user="avcoder" data-slug-hash="daXdOK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="transition-property">
+                    <span>See the Pen <a href="https://codepen.io/avcoder/pen/daXdOK/">
+                    transition-property</a> by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div class="column">
+              <h2>transition-property</h2>
+              <p>the property you want to change</p>
+              <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">see animatable properties</a>
+              </p>
+            </div> 
+          </div>
         </div>
         <!-- .end .wrap -->
       </section>
@@ -260,13 +272,13 @@ transition-timing-function: ease;
           <p>Though milliseconds are actually a lot more robust to use in production code</p>
           <p>If an animation is too fast to be interprested, it's cognitive load benefits can be lost</p>
         </div>
-        <ul style="list-style:none;" class="wrap size-40">
-          <li>100 ms, feels instantaneous</li>
-          <li>100 ms ~ 1s, feels connected / 250 ~ 300ms is the animation sweet spot</li>
-          <li>1s ~ 10s, disconnected (Perhaps needs a play button?)</li>
+        <ul class="flexblock features">
+          <li class="text-intro">100 ms, feels instantaneous</li>
+          <li class="text-intro">100 ms ~ 1s, feels connected / 250 ~ 300ms is the animation sweet spot</li>
+          <li class="text-intro">1s ~ 10s, disconnected (Perhaps needs a play button?)</li>
         </ul>
-
-
+<br>
+<p class="wrap aligncenter"><a href="https://codepen.io/avcoder/pen/daXdOK">Try different durations on previous slide's codepen</a></p>
         <!-- .end .wrap -->
       </section>
 
@@ -275,20 +287,31 @@ transition-timing-function: ease;
         <div class="wrap aligncenter">
           <h2>transition-timing-function</h2>
           <p>Optional property that "cushions" the transition</p>
-          <p>Default is set to ease</p>
+          <p>Default is set to ease. <a href="https://easings.net/">See more options</a></p>
         </div>
         <!-- .end .wrap -->
       </section>
 
-      <section class="">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <h2>transition-delay</h2>
-          <p>Optional property that is the number of milli/seconds to delay the change before firing it</p>
-          <p>Default is set to 0</p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
+      <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-left">
+              <h2>transition-delay</h2>
+              <p>Optional property that is the number of milli/seconds to delay the change before firing it</p>
+              <p>Default is set to 0</p>      
+            </div>
+            <!-- end .content-left -->
+            <div class="content-left">
+              <!-- <div class="embed"> = Responsive -->
+              <div class="embed">
+                <div data-youtube data-youtube-id="AhAEIYayDWs" data-autoplay data-no-controls></div>
+              </div>
+              <!-- end .embed -->
+            </div>
+            <!-- end .content-left -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
 
 
 

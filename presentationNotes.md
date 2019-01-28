@@ -32,3 +32,43 @@
 - only 1 of them is required, the rest are optional
 
 # transition-property
+
+- this is the thing that you want to change
+- for example, here's a link to all the animatable props
+- so you can animate background-color, transform, opacity, filter
+- when you're using transition-property, you are associating with that, one of these values
+- for example if you want to change background-color of a button, you'd say transition: background-color; (that's it)
+- informing the browser what prop to look out for (performance)
+- don't use implicit/explicit all, rather be more specific
+- do codepen exercise
+
+# transition-duration
+
+- the value can be seconds or ms
+- in actual production code use ms since it's more robust and used alot
+- read it
+- so I put a little chart/guide for how fast your animations should be
+- through research, it's well known that if animation is 100ms or less, it feels instantaneous
+- so if you have an animation 100ms or less, might as well put nothing at all, just as jerky
+- 100ms ~ 1s = here's your sweetspot
+- that's when the user feels connected, in particular, 250ms ~ 300ms is the magic number
+- a lot of gaming programmers use that number (250ms - 300ms) alot
+- 1s ~ 10s, feels disconnected. So if you have an animation that needs to take that long, perhaps you need a play button
+- so the way to use this is: transition-duration: 3s;
+- combined with the previous one where we had transition-property: background-color, you could get a nice effect on a button upon hover for example
+- try previous codepen example with the different transition durations
+
+# transition-timing-function
+
+- default is set to ease
+- read it
+- we'll get more in depth with regards to timing later in class
+- examples are: ease-in, ease-out, linear, make-your-own via cubic-bezier, steps
+- click link to see more options
+
+# transition-delay
+
+- suppose for example you hover over the button, but you don't want the effect to play right away
+- or perhaps you want to stagger 2 or more effects
+- so you could say, "don't change the colour yet until 2 seconds after hover"
+- read it
