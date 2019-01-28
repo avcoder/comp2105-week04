@@ -72,3 +72,17 @@
 - or perhaps you want to stagger 2 or more effects
 - so you could say, "don't change the colour yet until 2 seconds after hover"
 - read it
+- do codepen example for menu stagger
+
+# all 4 together
+
+- so altogether, here are your 4 main properties for transition
+- only 1 of them is required (transition-duration), others are optional due to defaults
+- last year I said 2 are required
+- However, if you were to combine all 4 of these into the shorthand notation it would look like...
+
+# shorthand
+
+- ...this
+- So you just put transition: and place all your values in there
+- Question: is the order important? Take a few minutes to determine the answer to that. Jumble things around.
