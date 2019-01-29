@@ -85,4 +85,5 @@
 
 - ...this
 - So you just put transition: and place all your values in there
-- Question: is the order important? Take a few minutes to determine the answer to that. Jumble things around.
+- Question: is the order important?
+- Do codepen: Take a few minutes to determine the answer to that. Jumble things around.
