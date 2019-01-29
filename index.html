@@ -646,73 +646,54 @@ transition:
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-primary">
+        <style scoped>
+          #steps { 
+            animation: jiggle 300ms 3 3s;
+          }
 
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2>
-            <strong>Summary:</strong>
-          </h2>
-          <br />
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li>
-                <p>Defining a number of visual properties to be transitioned from one state to another is relatively simple,
-                  with good browser support.</p>
-              </li>
-              <li>
-                <p>Be sure to set up the transition property, timing function, duration, and delay on the base styles of the
-                  element to be affected when it is interacted with</p>
-              </li>
-              <li>
-                <p>Comparison of the various timing functions available in addition to making your own via cubic-bezier
-                </p>
-              </li>
+          @keyframes jiggle {
+            0%, 100% { transform: rotate(-2deg)}
+            50% { transform: rotate(2deg)}
+          }
+        </style>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h2>transition-timing-function Values</h2>
+            <ul class="flexblock features">
+              <li>linear</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li id="steps">steps</li>
+              <li>cubic-bezier</li>
             </ul>
           </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
+  
 
 
-
-      <section>
-        <div class="wrap">
-          <div class="content-left">
-            <h3>
-              Do Lab 4
-            </h3>
-            <p>
-              <a href="https://codepen.io/avcoder/pen/xYXKEq">Link to starting file </a>
-            </p>
-            <p>View the 1 minute video and using the provided HTML file, attempt to emulate as closely as you can, the visual
-              styles and the CSS transitions for the navigation widget. Once you have submitted your attempt, you will be
-              granted access to the instructor's solution to the challenge (see the embedded CSS in the HTML file that appears
-              after you've completed your submission).</p>
-
+      <section class="bg-primary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>
+              transition-timing-function: <b>steps</b>
+            </h2>
+            <br />
+            <p class="text-intro">Forms the basis of sprite animation.</p>
+            <!-- .end .bg-white shadow -->
           </div>
-          <!-- end .content-left -->
-          <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-            <div class="embed">
-              <div data-youtube data-youtube-id="zDrIuib8umw" data-autoplay data-no-controls></div>
-            </div>
-            <!-- end .embed -->
-          </div>
-          <!-- end .content-left -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
+
 
 
       <section class="bg-secondary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50 frame">
           <h2 class="text-serif aligncenter">
-            Do Lab 4
+            Do Quiz + Lab 4
             <br/> until end of class
           </h2>
           <p class="aligncenter">
@@ -736,45 +717,6 @@ transition:
       </section>
 
 
-      <section class="bg-primary">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          
-          <br />
-          <div class="bg-white shadow">
-            <ul class="flexblock specs">
-              <li>
-                <p class="text-intro">Using animation to <b>orient and give context</b></p>
-              </li>
-              <li>
-                <p class="text-intro"><mark>Using animation to <b>direct focus and attention</b></mark></p>
-              </li>
-              <li>
-                <p class="text-intro">Using animation to <b>show cause and effect</b></p>
-              </li>
-              <li>
-                <p class="text-intro">Using animation for <b>feedback</b></p>
-              </li>
-              <li>
-                  <p class="text-intro">Using animation to <b>demonstrate</b></p>
-              </li>
-              <li>
-                  <p class="text-intro">Using animation to <b>express your brand</b></p>
-                </li>
-            </ul>
-            <p>
-              <cite>
-                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/669650293747900416/GApkPcFY_bigger.jpg" alt="Avatar">Val Head.
-                <br/>
-                <a href="https://rosenfeldmedia.com/books/designing-interface-animation/">
-                  Head, V. (2016). Using animation to solve design problems In, <i>Designing interface animation: meaningful motion for user experience.</i> Brooklyn, NY: Rosenfeld.</a>
-              </cite>
-            </p>
-          </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
 
       <section>
