@@ -138,15 +138,63 @@
 
 - Do codepen example for button
 
-# Multiple transforms - red
+# Multiple transition - red
 
 - if you have 2 transitions, here's one way (the bad way = highlighted in red) to write it
 - you can actually list all the different props separated by commas
 - however, every single prop below that (in terms of column), make sure this duration refers to colour, this duration refers to transform etc.
 - and for transition-delay, you have to substitute a 0 if there isn't a delay for color for example
 
-# Multiple transforms - green
+# Multiple transition - green
 
 - the better way is to separate by commas, each prop along with its values together on one line
 - so this is equivalent of our previous slide
 - that is how you do multiple transitions
+
+# CSS Transitions are good...
+
+- read it
+
+# Submit in-class 4
+
+# transition-timing-function Values
+
+- so here again are the different preset timing functions, but now we'll focus on steps which is a whole different category. In the past I taught this in one class...
+- steps belongs in the same category as these other timing functions
+- read it
+
+# transition-timing-function: steps
+
+- read it
+
+# Why sprites?
+
+- think back to the days of flipbook, maybe you've created one yourself, that's what we're talking about
+- back to the traditional frame-by-frame animation drawn by hand
+- so instead the browser to easily interpolate / tween between the from state and to-state, rather steps can take your png file (for example) and it's going to move frame by frame very fast
+- which principle of animation does this remind you of?
+
+# straight ahead pose
+
+- It is this one
+
+# val quote
+
+- read it
+
+# exporting images
+
+- I won't be going how to make sprite images (in Adobe Illustrator for example) but I'll be showing what you do with them once created
+- here are just a few tips if you happen to be exporting images from your software
+- read it
+- 1. so basically you'll end up with a large image (click example sprites link to show class where each row is something you can transition frame by frame)
+- 4. if you want to make your animation smooth, then create more frames, but at the cost of larger file size; it's a balancing game
+
+# steps(x)
+
+- here is a visual, just like a flipbook
+- this steps function, you insert a number, which represents the number of frames in your png file for example.
+- read it
+- in the past where we used a traditional ease, you'd start on from state, and the browser automatically gradually interpolates everything to the final to-state.
+- steps jump cuts
+- read bottom sentence
