@@ -65,8 +65,35 @@
 
   <style>
   mark { background-color: hsl(61, 100%, 77%)}
-  </style>
 
+      input[type=range] {
+      -webkit-appearance: none;
+      background: #333;
+      border: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 16px;
+      width: 120px;
+      background: lime;
+      margin-top: -4px;
+    }
+    input[type=range]::-moz-range-thumb {
+      border: none;
+      height: 16px;
+      width: 120px;
+      background: lime;
+      margin-top: -4px;
+      border-radius: 0;
+    }
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 </head>
 
 <body>
@@ -792,22 +819,6 @@ transition:
           </section>
     
     
-          <section class="bg-apple">
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-              <h2>Timing Function Values</h2>
-              <ul class="flexblock features">
-                <li>linear</li>
-                <li>ease-in</li>
-                <li>ease-out</li>
-                <li>ease-in-out</li>
-                <li style="color:lime">steps</li>
-                <li>cubic-bezier</li>
-              </ul>
-              <p class="text-intro">Steps divide the animation duration into equal parts</p>
-            </div>
-            <!-- .end .wrap -->
-          </section>
     
           <section class="bg-blue">
             <!--.wrap = container (width: 90%) -->
@@ -855,17 +866,17 @@ transition:
                     Easing comparison - linear vs steps
                   </h3>
                   <pre><code><h4>
-    #green { 
-      transition: transform 3s linear;
-    }
-    
-    #blue {
-      transition: transform 3s steps(3);
-    }
-    
-    #green:active, #blue:active {
-      transform: translateX(300px);
-    }
+#green { 
+  transition: transform 3s linear;
+}
+
+#blue {
+  transition: transform 3s steps(3);
+}
+
+#green:active, #blue:active {
+  transform: translateX(300px);
+}
       </h4></code></pre>
     
                 </div>
@@ -911,17 +922,17 @@ transition:
                     start vs end
                   </h3>
                   <pre><code><h4>
-      #green { 
-        transition: 3s steps(3, start);
-      }
-      
-      #blue {
-        transition: 3s steps(3, end);
-      }
-      
-      #green:active, #blue:active {
-        transform: translateX(300px);
-      }
+#green { 
+  transition: 3s steps(3, start);
+}
+
+#blue {
+  transition: 3s steps(3, end);
+}
+
+#green:active, #blue:active {
+  transform: translateX(300px);
+}
         </h4></code></pre>
     
                 </div>
@@ -961,14 +972,14 @@ transition:
                   </h3>
                   <p class="text-intro">Try changing: color</p>
                   <pre><code><h4>
-    #green {
-      background-color: green;
-      transition: background-color 3s steps(3);
-    }
-    
-    #green:hover {
-      background-color: yellow;
-    }
+#green {
+  background-color: green;
+  transition: background-color 3s steps(3);
+}
+
+#green:hover {
+  background-color: yellow;
+}
           </h4></code></pre>
     
                 </div>
@@ -1008,14 +1019,14 @@ transition:
                   </h3>
                   <p class="text-intro">Try changing: background-position</p>
                   <pre><code><h4>
-    #blue {
-      transition: background-position 3s steps(3);
-      background: url('graphics.png') 0px 0px;
-    }
-    
-    #blue:hover {
-      background-position: 0px -300px;
-    }
+#blue {
+  transition: background-position 3s steps(3);
+  background: url('graphics.png') 0px 0px;
+}
+
+#blue:hover {
+  background-position: 0px -300px;
+}
             </h4></code></pre>
     
                 </div>
@@ -1049,10 +1060,10 @@ transition:
                     <a href="./static/images/twitter_like_heart_animation.png">Image file that twitter uses for Like button</a>
                   </p>
                   <pre><code><h4>
-    #green { ...
-      background: url('twitter_like.png');
-      background-position: <span id="xvalue">0px 0px</span>;
-    }
+#green { ...
+  background: url('twitter_like.png');
+  background-position: <span id="xvalue">0px 0px</span>;
+}
     
           </h4></code></pre>
                   <p>Try viewing animation using your own twitter account</p>
@@ -1105,14 +1116,14 @@ transition:
                     <a href="./static/images/twitter_like_heart_animation.png">Image file that twitter uses for Like button</a>
                   </p>
                   <pre><code><h4>
-    #green { 
-      background: url('like.png') 0px 0px;
-      transition: 1s steps(28);
-    }
-    
-    #green:active {
-      background-position: -2800px 0px;
-    }
+#green { 
+  background: url('like.png') 0px 0px;
+  transition: 1s steps(28);
+}
+
+#green:active {
+  background-position: -2800px 0px;
+}
             </h4></code></pre>
     
                 </div>
@@ -1179,14 +1190,14 @@ transition:
                     <a href="./static/images/twitter_like_heart_animation.png">Image file that twitter uses for Like button</a>
                   </p>
                   <pre><code><h4>
-      #green { 
-        background: url('like.png') 0px 0px;
-        transition: 1s steps(29);
-      }
-      
-      #green:active {
-        background-position: -2800px 0px;
-      }
+#green { 
+  background: url('like.png') 0px 0px;
+  transition: 1s steps(29);
+}
+
+#green:active {
+  background-position: -2800px 0px;
+}
               </h4></code></pre>
     
                 </div>
@@ -1199,45 +1210,6 @@ transition:
     
     
     
-          <section class="bg-apple">
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap">
-              <div class="grid vertical-align">
-    
-                <div class="column">
-                  <p data-height="500" data-theme-id="0" data-slug-hash="Yaazxg" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                    data-pen-title="twitter sprite" class="codepen">See the Pen
-                    <a href="https://codepen.io/avcoder/pen/Yaazxg/">twitter sprite</a> by A.V. (
-                    <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                    <a href="https://codepen.io">CodePen</a>.</p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-                <!-- .end .column -->
-                <div class="column">
-                  <h3>
-                    Implement Twitter's Like animation
-                  </h3>
-                  <p class="text-intro">Using the steps() function, animate the given sprite.</p>
-                  <p>
-                    <a href="./static/images/twitter.gif">See Example</a>
-                  </p>
-                  <pre><code><h4>
-    #green { 
-      background: url('like.png') 0px 0px;
-      transition: 1s steps(28);
-    }
-    
-    #green:active {
-      background-position: -2800px 0px;
-    }
-                              </h4></code></pre>
-                </div>
-                <!-- .end .column -->
-              </div>
-              <!-- .end .grid -->
-            </div>
-            <!-- .end .wrap -->
-          </section>
 
           <section class="bg-apple">
               <!--.wrap = container (width: 90%) -->
@@ -1287,81 +1259,47 @@ transition:
               <!-- .end .wrap -->
             </section>
       
+
             <section class="bg-apple">
-              <!--.wrap = container (width: 90%) -->
-              <div class="wrap">
-                <div class="grid vertical-align">
-      
-                  <div class="column">
-                    <p data-height="500" data-theme-id="0" data-slug-hash="qYBgBp" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                      data-pen-title="DIY Catwalk(cycle)" class="codepen">See the Pen
-                      <a href="https://codepen.io/avcoder/pen/qYBgBp/">DIY Catwalk(cycle)</a> by A.V. (
-                      <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                      <a href="https://codepen.io">CodePen</a>.</p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                  <div class="grid vertical-align">
+        
+                    <div class="column">
+                      <p data-height="500" data-theme-id="0" data-slug-hash="Yaazxg" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                        data-pen-title="twitter sprite" class="codepen">See the Pen
+                        <a href="https://codepen.io/avcoder/pen/Yaazxg/">twitter sprite</a> by A.V. (
+                        <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                        <a href="https://codepen.io">CodePen</a>.</p>
+                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <!-- .end .column -->
+                    <div class="column">
+                      <h3>
+                        Implement Twitter's Like animation
+                      </h3>
+                      <p class="text-intro">Using the steps() function, animate the given sprite.</p>
+                      <p>
+                        <a href="./static/images/twitter.gif">See Example</a>
+                      </p>
+                      <pre><code><h4>
+#green { 
+  background: url('like.png') 0px 0px;
+  transition: 1s steps(28);
+}
+
+#green:active {
+  background-position: -2800px 0px;
+}
+                                  </h4></code></pre>
+                    </div>
+                    <!-- .end .column -->
                   </div>
-                  <!-- .end .column -->
-                  <div class="column">
-                    <h3>
-                      Make a walk-cycle of this cat
-                    </h3>
-                    <p class="text-intro">You have
-                      <a href="http://avillaruz.computerstudi.es/comp2105/">5 minutes</a> to try using the steps() function, animate the given sprite.</p>
-                    <p>
-                      <a href="http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png">See sprite</a>
-                    </p>
-                    <pre><code><h4>
-      .sprite {
-        animation: walker 1s infinite steps(10);
-      }
-      
-      @keyframes walker {
-        0% { background-position: 0 0; }
-        100% { background-position: 0 -5000px; }
-      }
-                    </h4></code></pre>
-                  </div>
-                  <!-- .end .column -->
+                  <!-- .end .grid -->
                 </div>
-                <!-- .end .grid -->
-              </div>
-              <!-- .end .wrap -->
-            </section>
-      
-            <section class="bg-secondary">
-              <!--.wrap = container (width: 90%) -->
-              <div class="wrap size-50 frame">
-                <h2 class="text-serif aligncenter">
-                  Submit
-                  <br> in-class Exercise 10 + Break
-                  <br/> (5 mins) + (15 mins)
-                </h2>
-                <p class="aligncenter">
-                  <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
-                </p>
-                <p class="text-symbols">* * *</p>
-                <h4>More Stuff</h4>
-      
-                <ul>
-                  <li>
-                    <a href="https://research.hackerrank.com/developer-skills/2018/">https://research.hackerrank.com/developer-skills/2018/</a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/wesbos/status/977223833206829056">https://twitter.com/wesbos/status/977223833206829056</a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/AllThingsSmitty/status/930617039085035520">https://twitter.com/AllThingsSmitty/status/930617039085035520</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-      
-
-
-
-
-
-
+                <!-- .end .wrap -->
+              </section>
+    
 
       <section class="bg-secondary">
         <!--.wrap = container (width: 90%) -->
