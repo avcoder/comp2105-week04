@@ -306,7 +306,7 @@ transition-timing-function: ease;
             <!-- .end .wrap -->
           </section>
 
-      <section class="">
+      <section class="bg-primary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
@@ -330,7 +330,7 @@ transition-timing-function: ease;
         <!-- .end .wrap -->
       </section>
 
-      <section class="">
+      <section class="bg-primary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>transition-duration</h2>
@@ -348,7 +348,7 @@ transition-timing-function: ease;
         <!-- .end .wrap -->
       </section>
 
-      <section class="">
+      <section class="bg-primary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>transition-timing-function</h2>
@@ -358,7 +358,7 @@ transition-timing-function: ease;
         <!-- .end .wrap -->
       </section>
 
-      <section class="">
+      <section class="bg-primary">
           <div class="wrap">
             <div class="content-left">
               <h2>transition-delay</h2>
@@ -382,7 +382,7 @@ transition-timing-function: ease;
 
 
 
-      <section class="bg-apple">
+      <section class="bg-primary">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <pre>
@@ -399,10 +399,11 @@ transition-timing-function: ease;
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
+          <h2>Does it have to be in this order?</h2>
+          <br><br>
           <code>
-            <h2>transition: color 2s ease-in 0.5s;</h2>
+            <h3>transition: color 2s ease-in 0.5s;</h3>
           </code>
-          <p>Does it have to be in this order?</p>
           <p>
             <a href="https://codepen.io/avcoder/pen/bLYpxZ">https://codepen.io/avcoder/pen/bLYpxZ</a>
           </p>
@@ -439,6 +440,36 @@ transition-timing-function: ease;
           </div>
           <!-- .end .wrap -->
         </section>
+
+        <section class="">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+              <h1>Multiple transforms</h1>
+              <pre>
+              <h2>
+              transition-property: color, transform;
+              transition-duration: 2s, 300ms;
+              transition-delay: 0, 1s;</h2>
+              </pre>
+              <br/>
+              <p>Imagine how frustrating it gets when you have 4 or 5 properties and you have a whole string of zeros just to get
+                to the 1s delay</p>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+    
+          <section class="bg-apple">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter size-50">
+              <pre><h2>
+              transition:
+                 color 2s,
+                 transform 300ms 1s;</h2>
+              </pre>
+              <p>All the statements are separated by commas and all its values are together where it ought</p>
+            </div>
+            <!-- .end .wrap -->
+          </section>
 
       
       <section class="bg-apple">
@@ -506,80 +537,6 @@ transition-timing-function: ease;
       </section>
 
 
-      <section class="bg-red">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <pre>
-          <h2>
-          transition-property: color, transform;
-          transition-duration: 2s, 300ms;
-          transition-delay: 0, 1s;</h2>
-          </pre>
-          <br/>
-          <p>Imagine how frustrating it gets when you have 4 or 5 properties and you have a whole string of zeros just to get
-            to the 1s delay</p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-apple">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter size-50">
-          <pre><h2>
-          transition:
-             color 2s,
-             transform 300ms 1s;</h2>
-          </pre>
-          <p>All the statements are separated by commas and all its values are together where it ought</p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <div class="wrap">
-          <div class="content-left">
-            <h3>
-              Online Exercise to be submitted
-            </h3>
-            <p>Watch Scott McCrindle's 21 minute video showing how to set up CSS transitions.</p>
-            <p>
-              <a href="https://codepen.io/avcoder/pen/wyrwWR">https://codepen.io/avcoder/pen/wyrwWR</a>
-              <br/>OR
-              <br/>use Blackboard's files under Online Exercise 4
-            </p>
-
-          </div>
-          <!-- end .content-left -->
-          <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-            <div class="embed">
-              <div data-youtube data-youtube-id="IGgNnJvyLyg" data-autoplay data-no-controls></div>
-            </div>
-            <!-- end .embed -->
-          </div>
-          <!-- end .content-left -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-
-
-      <section class="bg-apple aligncenter">
-        <div class="wrap zoomIn">
-          <h1>
-            Submit what we just did under
-            <br/>
-            <strong>"Online Exercise 4"</strong>
-          </h1>
-          <p>
-            <a href="https://gc.blackboard.com">Login to Blackboard</a>
-          </p>
-
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
 
 
       <section class="bg-secondary">
@@ -587,24 +544,23 @@ transition-timing-function: ease;
         <div class="wrap size-50 frame">
           <h2 class="text-serif aligncenter">
             Do Quiz + Break
-            <br/> (10 min) + (15 min)
+            <br/> (10 min) + (20 min)
           </h2>
           <p class="aligncenter">
             <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
           </p>
           <p class="text-symbols">* * *</p>
-          <h4>Did you know?</h4>
 
           <ul>
             <li>
-              <a href="https://hreftools.com/" style="text-decoration: underline;">https://hreftools.com/</a>
+              <a href="https://research.hackerrank.com/developer-skills/2019" style="text-decoration: underline;">2019 Hackerrank Developer Skills Report</a>
             </li>
             <li>
-              <a href="https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/02/06/a-beginners-guide-to-quantum-computing-and-q/?utm_source=t.co&utm_medium=referral"
-                style="text-decoration: underline;">Beginner's Guide to Quantum Computing</a>
+              <a href="https://css-tricks.com/the-great-divide/"
+                style="text-decoration: underline;">The Great Divide</a>
             </li>
             <li>
-              <a href="https://twitter.com/adamwathan/status/963442558893359104" style="text-decoration: underline;">Chrome DevTools has a command palette</a>
+              <a href="https://twitter.com/boagworld/status/1087275188327190528" style="text-decoration: underline;">Modern Web in one cartoon</a>
             </li>
           </ul>
         </div>
